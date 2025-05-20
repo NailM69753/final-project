@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <title>Bmwm3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 20px;
+      font-size: 36px;
+      text-align: left;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #333;
+      padding: 0 20px;
+      max-width: 800px;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .logo img {
+      width: 600px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hello <span th:text="${name}">Vistula</span></h1>
+
+<div class="description">
+  It features a 4.0-liter V8 engine,
+  producing 420 horsepower and 400 Nm of torque.
+  The E92 M3 was known for its powerful engine,
+  sharp handling, and aggressive styling.
+</div>
+
+<div class="logo">
+  <img src="/bmwe92m.png" alt="Bmw E92">
+</div>
+
+</body>
+</html>
